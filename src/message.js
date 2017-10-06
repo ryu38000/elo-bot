@@ -112,10 +112,6 @@ const replyMessage = (message) => {
 
               }
 
-              else{
-                   message.addReply([{ type: 'text', content: "Très bien, vous souhaitez être documenté, quel service vous intéresse? (Ecoute, dialogue, sémantique, pilotage)" }])
-              }
-
                 // prod = true;
                 // nameEntities.push(t);
                 // for(var i = 0 ; i<result.entities[t].length;i++){
@@ -127,6 +123,9 @@ const replyMessage = (message) => {
       if(stringMail!=''){
         message.addReply([{ type: 'text', content: string },{ type: 'text', content: stringMail },{ type: 'text', content: "De quoi d'autre souhaiteriez vous discuter ?" }])
       }
+                    else{
+                   message.addReply([{ type: 'text', content: "Très bien, vous souhaitez être documenté, quel service vous intéresse? (Ecoute, dialogue, sémantique, pilotage)" }])
+              }
 
       /*if(string===''){
           if(result.language === 'fr'){
