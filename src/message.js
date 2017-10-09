@@ -123,9 +123,9 @@ const replyMessage = (message) => {
       if(stringMail!=''){
         message.addReply([{ type: 'text', content: string },{ type: 'text', content: stringMail },{ type: 'text', content: "De quoi d'autre souhaiteriez vous discuter ?" }])
       }
-                    else{
-                   message.addReply([{ type: 'text', content: "Très bien, vous souhaitez être documenté, quel service vous intéresse? (Ecoute, dialogue, sémantique, pilotage)" }])
-              }
+      else{
+            message.addReply([{ type: 'text', content: "Très bien, vous souhaitez être documenté, quel service vous intéresse? (Ecoute, dialogue, sémantique, pilotage)" }])
+      }
 
       /*if(string===''){
           if(result.language === 'fr'){
@@ -153,7 +153,7 @@ const replyMessage = (message) => {
 
 
         if(result.action.slug == "appeloperateur"){
-          //console.log("APPELOPERATEUR")
+          console.log("APPELOPERATEUR")
           //message.addReply([{ type: 'text', content: "Vous allez être mis en relation avec un de nos conseillers..." }])
           const call = {
             type: 'quickReplies',
